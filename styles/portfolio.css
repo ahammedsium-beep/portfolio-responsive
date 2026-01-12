@@ -31,6 +31,12 @@
     cursor: pointer;
 }
 
+.btn-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 .section-heading {
     max-width: 827px;
     text-align: center;
@@ -296,6 +302,39 @@ footer .footer-container {
         font-size: 30px;
     }
 
+    .btn-group{
+        justify-content: center;
+    }
+
+    header {
+        background: url("../images/header_bg.png"), #FFF8F3;
+        background-position: bottom right;
+        background-repeat: no-repeat;
+    }
+
+    nav{
+        gap: 20px;
+    }
+
+    nav .menu{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #banner{
+        margin: 20px;
+        gap: 20px;
+        text-align: center;
+    }
+
+    #banner .banner-image img{
+        width: 100%;
+    }
+
+    #banner .banner-content h1{
+        font-size: 44px;
+    }
+
     #about,
     #skills,
     #resume{
@@ -321,7 +360,9 @@ footer .footer-container {
     #skills .skills-container .skill-box,
     #about .about-container .about-info,
     footer .footer-container,
-    #resume .resume-container{
+    #resume .resume-container,
+    nav,
+    #banner{
         flex-direction: column;
     }
 
